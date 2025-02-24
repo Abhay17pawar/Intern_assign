@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL, // Make sure the DATABASE_URL is correct in the .env file
+  connectionString: process.env.DATABASE_URL, 
 });
 
-module.exports = { pool }; // Ensure that you export `pool` correctly.
+module.exports = { pool }; 

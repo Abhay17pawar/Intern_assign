@@ -6,7 +6,6 @@ const createUser = async (username, email, password) => {
   return result.rows[0];  
 };
 
-// Get user by email
 const getUserByEmail = async (email) => {
   const query = 'SELECT * FROM users WHERE email = $1';
   const result = await pool.query(query, [email]);
